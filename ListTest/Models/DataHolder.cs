@@ -10,10 +10,15 @@ namespace ListTest.Models
         public int id { get; set; }
         public string value { get; set; }
 
-        public DataHolder(int id, string value)
+        
+        public DataHolder(int ID, string VALUE)
         {
-            this.id = id;
-            this.value = value;
+            id = ID;
+            value = VALUE;
+        }
+        // empty constructor needed, errors otherwise
+        public DataHolder()
+        {
         }
     }
 }
